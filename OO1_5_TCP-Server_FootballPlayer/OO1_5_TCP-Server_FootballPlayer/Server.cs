@@ -75,13 +75,6 @@ namespace OO1_5_TCP_Server
                     string output = Save(commandTwo);
                     sw.WriteLine(output);
                     Console.WriteLine(output);
-
-                    Console.WriteLine("\nGemmer Fodboldspiller\n");
-
-                    if (commandTwo.ToLower() == "0")
-                    {
-                        Console.WriteLine("\nGemmer Fodboldspiller 0\n");
-                    }
                 }
 
                 //
