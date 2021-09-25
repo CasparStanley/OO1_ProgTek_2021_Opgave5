@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>OO1_5_TCP_Server_FootballPlayer</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Obligatorisk Opgave 1\OO1_Opgave1\OO1_Opgave1\OO1_Opgave1.csproj" />
+  </ItemGroup>
+
+</Project>
