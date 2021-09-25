@@ -6,8 +6,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Net.Sockets;
 using System.Text.Json;
-using OO1_Opgave1;
 using System.Threading;
+using OO1_5_TCP_Server_FootballPlayer;
 
 namespace OO1_5_TCP_Server
 {
