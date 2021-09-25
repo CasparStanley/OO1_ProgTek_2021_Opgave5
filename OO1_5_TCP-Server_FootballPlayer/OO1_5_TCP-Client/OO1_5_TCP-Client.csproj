@@ -6,8 +6,4 @@
     <RootNamespace>OO1_5_TCP_Client</RootNamespace>
   </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\..\..\..\Obligatorisk Opgave 1\OO1_Opgave1\OO1_Opgave1\OO1_Opgave1.csproj" />
-  </ItemGroup>
-
 </Project>

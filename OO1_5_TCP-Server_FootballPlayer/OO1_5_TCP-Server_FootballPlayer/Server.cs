@@ -15,6 +15,15 @@ namespace OO1_5_TCP_Server
     {
         public Server() { }
 
+        public static List<FootballPlayer> players = new List<FootballPlayer>()
+        {
+            new FootballPlayer(0, "Jesper Groenkjaer", 50000, 10),
+            new FootballPlayer(1, "Jesper Kristiansen", 20000, 1),
+            new FootballPlayer(2, "Kasper Schmeicel", 100000, 9),
+            new FootballPlayer(3, "Fodboldspiller Fire", 40000, 99),
+            new FootballPlayer(4, "En mere", 59000, 69),
+        };
+
         public void Start(int port)
         {
             TcpListener listener = new TcpListener(port);
@@ -84,7 +93,7 @@ namespace OO1_5_TCP_Server
 
         private string GetAll()
         {
-            string allPlayers = JsonSerializer.Serialize(Program.players);
+            string allPlayers = JsonSerializer.Serialize(players);
 
             Console.WriteLine($"Henter Alle Fodboldspillere:");
 
@@ -118,7 +127,7 @@ namespace OO1_5_TCP_Server
             {
                 id = Int32.Parse(id_string);
 
-                return JsonSerializer.Serialize(Program.players.Find(i => i.Id == id));
+                return JsonSerializer.Serialize(players.Find(i => i.Id == id));
             }
             catch
             {
@@ -134,7 +143,7 @@ namespace OO1_5_TCP_Server
 
             try
             {
-                Program.players.Add(JsonSerializer.Deserialize<FootballPlayer>(commandTwo));
+                players.Add(JsonSerializer.Deserialize<FootballPlayer>(commandTwo));
                 return "Success!";
             }
             catch
